@@ -20,7 +20,7 @@ jobs:
       run: docker pull vulnerables/web-dvwa:latest
     - name: Clair Test
       id: clairtest
-      uses: santander-group/clair-scan-action@update-action
+      uses: santander-group/clair@update-action
       with:
        image: "vulnerables/web-dvwa:latest"
        report_format: xml
